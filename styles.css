@@ -1,0 +1,67 @@
+:root {
+    --text-color: #f5f5dc;
+    --background-color: #000000;
+}
+
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10%;
+
+    background-color: var(--background-color);
+
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 9.0em;
+    color: var(--text-color);
+}
+
+p {
+    text-align: center;
+    font-size: 3.0em;
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+
+    background-color: var(--background-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0.5em;
+}
+
+nav a {
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2.0em;
+}
+
+nav a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    animation: invert_colors 0.8s;
+}
+
+@keyframes invert_colors {
+    0% {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+    100% {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+}
