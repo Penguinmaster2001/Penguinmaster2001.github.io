@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #ffb6c1;
+    --secondary-color: #ffd9e6;
+    --accent-color: #c57d9a;
+}
+
+body {
+    width: 1fr;
+    max-width: 1fr;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, p {
+    color: var(--accent-color);
+}
+
+h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    padding: 0;
+    margin-top: 20px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+iframe {
+    border-radius: 5%;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.picture-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.grid-item {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+/* For phones */
+@media (max-width: 800px) {
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        margin-top: 5;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .picture-section {
+        margin: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 5px;
+    }
+
+    .grid-item {
+        padding: 5px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
