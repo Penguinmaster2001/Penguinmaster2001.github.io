@@ -31,6 +31,7 @@ header {
     padding: 0;
     
     width: 100%;
+    max-width: 1fr;
 }
 
 
@@ -46,6 +47,7 @@ header {
 
 
 .construction-notice h2 {
+    width: 100%;
     margin: 0;
     padding: 0;
 
@@ -66,20 +68,36 @@ body {
 
 
 
-h1, h2, h3, h4, p {
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    min-height: 25vh;
+    margin: 0 auto;
+    padding: auto;
+}
+
+
+
+p, h1, h2, h3, h4 {
     color: var(--accent-color);
 }
 
 
-h4, p {
-    padding: 0;
-    margin: 0;
+h1, h2, h3, h4 {
+    text-align: center;
 }
 
 
-h4 {
-    padding: 0;
-    margin-top: 20px;
+p {
+    text-align: justify;
+    font-size: 1vw;
+}
+
+
+h1 {
+    font-size: 3vh;
 }
 
 
@@ -111,24 +129,8 @@ iframe {
 
 
 
-.name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 25vh;
-}
-
 .name h1 {
-    font-size: 3vw;
-}
-
-
-
-.social-links-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 25vh;
+    font-size: 4vw;
 }
 
 .social-links {
@@ -136,12 +138,14 @@ iframe {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin: 0 auto;
 }
 
 
 .social-links a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    border-color: var(--secondary-color);
     font-size: 5vw;
     flex: 1;
     width: auto;
@@ -154,13 +158,14 @@ iframe {
     padding: 1vw;
     margin: 1vw;
     border-radius: 1%;
+    border-width: 2px;
     text-decoration: none;
 }
 
 .social-links a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    animation: invert_colors 0.8s;
+    animation: invert_colors 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 @keyframes invert_colors {
@@ -172,6 +177,15 @@ iframe {
         background-color: var(--secondary-color);
         color: var(--primary-color);
     }
+}
+
+
+.about-me {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
 }
 
 
@@ -216,11 +230,6 @@ iframe {
 
     h2, h3 {
         font-size: 1.5rem;
-    }
-
-    h4 {
-        margin-top: 5;
-        font-size: 1.2rem;
     }
 
     p {
