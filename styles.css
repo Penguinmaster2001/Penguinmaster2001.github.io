@@ -204,7 +204,7 @@ img:hover {
 .social-links a:hover {
     background-color: var(--secondary-color);
     color: var(--M_O_6);
-    animation: invert_colors 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation: invert_colors 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes invert_colors {
