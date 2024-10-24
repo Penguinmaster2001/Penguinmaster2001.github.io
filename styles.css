@@ -128,6 +128,14 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 
+h3 {
+    margin: 4vh 0 1vh 0;
+}
+
+h4 {
+    margin: 1vh 0 1vh 0;
+}
+
 
 p, li {
     text-align: justify;
@@ -260,7 +268,7 @@ img:hover {
     gap: 20px;
     justify-content: center;
     margin: 0 auto;
-    max-width: 95vw;
+    max-width: 90vw;
 }
 
 
