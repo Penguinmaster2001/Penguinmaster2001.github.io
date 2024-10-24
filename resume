@@ -41,21 +41,18 @@
 
     <section>
         <h2>
-            About
+            My Skills
         </h2>
-        <div class="about-me">
-            <p>
-                Hello! I'm a Computer Science and Mathematics student at the University of Victoria (UVic), and a Co-Lead of the Software Team at UVic’s Environmental Engineering Club (UVEEC). I'm extremely passionate about programming and math, in particular, exploring and implementing mathematical concepts through programming.
-            </p>
-            <p>
-                At UVEEC, I'm tasked with designing a control system for an underwater glider. We heavily focus on planning, and documentation to ensure the club's mission will be continued even after I graduate. I also organize skill development sessions for tools widely used in industry such as Git, Linux, ROS 2, and many more.
-            </p>
-            <p>
-                I also regularly work on personal projects to explore my interests outside of school and the club, like shader programming, game development, and simulations.
-            </p>
-            <p>
-                Please check out my GitHub to see what I've done!
-            </p>
+    
+        <div class="tech-skills">
+            <h3>Programming</h3>
+            <p>C#, Python, C, C++, Java, Bash Scripting, R, GLSL</p>
+            <h3>Operating Systems</h3>
+            <p>Linux, Unix-based, MS Windows</p>
+            <h3>Software</h3>
+            <p>Visual Studio Code, Vim, Bash, Git, GitHub, Docker, Robot Operating System 2, Blender 3D Creation Suite, OpenGL, .NET</p>
+            <h3>Computers</h3>
+            <p>Building / Upgrading Systems, Arduino, Raspberry Pi</p>
         </div>
     </section>
 
@@ -63,18 +60,6 @@
         <h2>
             What I've Done
         </h2>
-    
-        <div class="tech-skills">
-            <h2>Technical Skills</h2>
-            <div class="section-title">Programming</div>
-            <p>C#, Python, C, C++, Java, Bash Scripting, R, GLSL</p>
-            <div class="section-title">Operating Systems</div>
-            <p>Linux, Unix-based, MS Windows</p>
-            <div class="section-title">Software</div>
-            <p>Visual Studio Code, Vim, Bash, Git, GitHub, Docker, Robot Operating System 2, Blender 3D Creation Suite, OpenGL, .NET</p>
-            <div class="section-title">Computers</div>
-            <p>Building / Upgrading Systems, Arduino, Raspberry Pi</p>
-        </div>
     
         <div class="volunteer">
             <h2>Volunteer / Extracurricular</h2>
