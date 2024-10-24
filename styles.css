@@ -125,32 +125,35 @@ p, h1, h2, h3, h4 {
 
 h1, h2, h3, h4 {
     text-align: center;
+    font-weight: bold;
 }
 
 
-p {
+p, li {
     text-align: justify;
-    font-size: 1vw;
+    font-weight: normal;
+    max-width: 40em;
+    font-size: 2em;
 }
 
 
 h1 {
-    font-size: 5vw;
+    font-size: 8em;
 }
 
 
 h2 {
-    font-size: 3vw;
+    font-size: 6em;
 }
 
 
 h3 {
-    font-size: 2vw;
+    font-size: 4em;
 }
 
 
 h4 {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 
@@ -179,6 +182,7 @@ img:hover {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 .social-links {
@@ -197,11 +201,7 @@ img:hover {
     flex: 1;
     width: auto;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    flex-direction: column;
     padding: 1vw;
     margin: 1vw;
     border-radius: 1%;
@@ -256,13 +256,18 @@ img:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: max-content;
+    grid-template-columns: max-content;
     gap: 20px;
     justify-content: center;
-    align-items: start;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 95vw;
+}
+
+
+
+.social-links .grid-container {
+    grid-template-columns: repeat(auto-fit, 25vw);
+    grid-template-rows: auto;
 }
 
 
@@ -270,30 +275,33 @@ img:hover {
 .grid-item {
     width: auto;
     height: 100%;
-    max-width: 100%;
+    max-width: 90vw;
     max-height: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: start;
     flex-direction: column;
+    text-wrap: pretty;
 }
 
 
 
 /* For phones */
 @media (max-width: 800px) {
-    p {
+    /* p {
         font-size: 0.8rem;
+    } */
+    body {
+        font-size: 2vw;
     }
 
-    .social-links {
-        flex-direction: column;
-        font-size: 20vh;
+    .social-links .grid-container {
+        grid-template-rows: repeat(auto-fit);
+        grid-template-columns: auto;
     }
 
-    .about-me {
-        width: 90vw;
+    .social-links .grid-container a {
+        font-size: 6vh;
     }
 
     .resume-pdf {
@@ -306,8 +314,7 @@ img:hover {
     }
 
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 5px;
+        grid-gap: 1vh;
     }
 
     .grid-item {

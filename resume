@@ -25,41 +25,79 @@
         </h1>
     </section>
 
-    <section>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
-                LinkedIn
-            </a>
-            <a href="https://github.com/Penguinmaster2001" target="_blank">
-                GitHub
-            </a>
-            <a href="mailto:anthony.cieri@hotmail.com">
-                Email
-            </a>
+    <section class="social-links">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://github.com/Penguinmaster2001" target="_blank">
+                    GitHub
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="mailto:anthony.cieri@hotmail.com">
+                    Email
+                </a>
+            </div>
         </div>
     </section>
 
     <section>
-        <h2>
-            My Skills
-        </h2>
+        <h2>Technical Skills</h2>
     
-        <div class="tech-skills">
-            <h3>Programming</h3>
-            <p>C#, Python, C, C++, Java, Bash Scripting, R, GLSL</p>
-            <h3>Operating Systems</h3>
-            <p>Linux, Unix-based, MS Windows</p>
-            <h3>Software</h3>
-            <p>Visual Studio Code, Vim, Bash, Git, GitHub, Docker, Robot Operating System 2, Blender 3D Creation Suite, OpenGL, .NET</p>
-            <h3>Computers</h3>
-            <p>Building / Upgrading Systems, Arduino, Raspberry Pi</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Programming</h3>
+                <p>C#, Python, C, C++, Java, Bash Scripting, R, GLSL</p>
+            </div>
+            <div class="grid-item">
+                <h3>Operating Systems</h3>
+                <p>Linux, Unix-based, MS Windows</p>
+            </div>
+            <div class="grid-item">
+                <h3>Software</h3>
+                <p>Visual Studio Code, Vim, Bash, Git, GitHub, Docker, Robot Operating System 2, Blender 3D Creation Suite, OpenGL, .NET</p>
+            </div>
+            <div class="grid-item">
+                <h3>Computers</h3>
+                <p>Building / Upgrading Systems, Arduino, Raspberry Pi</p>
+            </div>
         </div>
     </section>
 
     <section>
-        <h2>
-            What I've Done
-        </h2>
+        <h2>Professional Experience</h2>
+    
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Mechanical Engineering Research Assistant</h3>
+                <h4>Victoria, BC | Sept - Dec 2024</h4>
+                <h4>Developing an AR mobile app to help engineers learn dynamics</h4>
+                <ul>
+                    <li>Creating an AR UI for configuring physics problems</li>
+                    <li>Utilized the Unity XR interaction toolkit</li>
+                    <li>Deployed to Android and IOS devices</li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h3>Junior Developer at D-KAMP Services</h3>
+                <h4>Remote | Feb - Jun 2023</h4>
+                <h4>Developed an API for a resume parser and analyzer in Python</h4>
+                <ul>
+                    <li>Designed a GUI</li>
+                    <li>Wrote a parser for PDF and MS Word documents</li>
+                    <li>Designed a system to rate and compare two resumes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
     
         <div class="volunteer">
             <h2>Volunteer / Extracurricular</h2>
