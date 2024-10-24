@@ -96,16 +96,6 @@ a:hover {
 
 
 
-.construction-notice h2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    font-size: 1em;
-}
-
-
-
 body {
     width: 1fr;
     max-width: 1fr;
@@ -145,7 +135,17 @@ p {
 
 
 h1 {
-    font-size: 3vh;
+    font-size: 5vw;
+}
+
+
+h2 {
+    font-size: 3vw;
+}
+
+
+h4 {
+    font-size: 1em;
 }
 
 
@@ -170,8 +170,10 @@ img:hover {
 
 
 
-.name h1 {
-    font-size: 4vw;
+.construction-notice h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .social-links {
