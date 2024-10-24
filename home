@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anthony Cieri</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/LogoV2-512WhiteBG.png">
+</head>
+    
+
+<header>
+    <div class="construction-notice">
+        <h4>
+            Under Construction
+        </h4>
+    </div>
+    
+    <div class="navigation">
+        <a href="index">
+            Home
+        </a>
+        <a href="resume">
+            Resume
+        </a>
+    </div>
+</header>
+
+<body>
+    <section class="name">
+        <h1>Anthony Cieri</h1>
+    </section>
+
+    <section class="social-links">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://github.com/Penguinmaster2001" target="_blank">
+                    GitHub
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="mailto:anthony.cieri@hotmail.com">
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            About
+        </h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Bio</h3>
+                <p>
+                    Hello! I'm a Computer Science and Mathematics student at the University of Victoria (UVic), and a Co-Lead of the Software Team at UVic’s Environmental Engineering Club (UVEEC). I'm extremely passionate about programming and math, in particular, exploring and implementing mathematical concepts through programming.
+                </p>
+                <p>
+                    At UVEEC, I'm tasked with designing a control system for an underwater glider. We heavily focus on planning, and documentation to ensure the club's mission will be continued even after I graduate. I also organize skill development sessions for tools widely used in industry such as Git, Linux, ROS 2, and many more.
+                </p>
+                <p>
+                    I also regularly work on personal projects to explore my interests outside of school and the club, like shader programming, game development, and simulations.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <h3>Please check out my <a href="https://github.com/Penguinmaster2001" target="_blank">GitHub</a> projects to see what I've done!</h3>
+            </div>
+
+            <div class="grid-item">
+                <h3>And take a look at my <a href="resume">Resume Page</a></h3>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<footer>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
+            https://www.linkedin.com/in/anthony-cieri/
+        </a>
+        <a href="https://github.com/Penguinmaster2001" target="_blank">
+            https://github.com/Penguinmaster2001
+        </a>
+        <a href="mailto:anthony.cieri@hotmail.com">
+            anthony.cieri@hotmail.com
+        </a>
+    </div>
+</footer>
+</html>

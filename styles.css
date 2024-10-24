@@ -193,6 +193,33 @@ img:hover {
     font-size: 1em;
 }
 
+.navigation {
+    background-color: var(--secondary-color);
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 1fr;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.navigation a {
+    text-decoration: none;
+    
+    font-size: 3vh;
+    font-weight: bold;
+
+    padding: 1vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition-duration: 0.4s;
+}
+
 .social-links {
     display: flex;
     justify-content: space-between;
@@ -288,6 +315,7 @@ img:hover {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-wrap: pretty;
 }
