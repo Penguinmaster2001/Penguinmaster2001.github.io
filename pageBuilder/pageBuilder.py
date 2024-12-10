@@ -1,5 +1,7 @@
 
 import os
+import json
+import projectSnippet
 
 
 
@@ -46,7 +48,7 @@ def make_action_snippets():
     navigation_snippet = "<div class=\"navigation\">\n"
 
     for page in page_html.keys():
-        g = ""
+        
         navigation_snippet += f"<a href=\"./{page}\">{page.removesuffix(".html").title()}</a>\n"
 
     navigation_snippet += "</div>\n"
@@ -61,6 +63,8 @@ def get_snippets():
     for file in filter(lambda file: file.endswith('.html'), os.listdir(snippets_dir)):
         with open(f"{snippets_dir}{file}", 'r') as f:
             snippet_code_html[snippet_name_to_code(file.removesuffix(".html"))] = insert_snippets(f.read())
+
+    snippet_code_html[snippet_name_to_code("resume-project-section")] = projectSnippet.create_project_section_snippet("./projects.json")
 
 
 
