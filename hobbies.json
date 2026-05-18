@@ -1,0 +1,20 @@
+{
+    "Active": [
+        "Brazilian Jiu Jitsu",
+        "Mountain Biking",
+        "Photography",
+        "Sailing (Licensed by the ASA)"
+    ],
+    "Creative": [
+        "Photography",
+        "3D Printing",
+        "3D Modeling and Rendering"
+    ],
+    "Computing": [
+        "Programming",
+        "System customizing / configuring",
+        "Open source Software",
+        "Building / Upgrading Hardware",
+        "Video Games"
+    ]
+}

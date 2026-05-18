@@ -1,0 +1,34 @@
+{
+    "Programming": [
+        "C#",
+        "Python",
+        "C",
+        "C++",
+        "Java",
+        "Bash Scripting",
+        "R",
+        "GLSL"
+    ],
+    "Operating Systems": [
+        "Linux",
+        "Unix-based",
+        "MS Windows"
+    ],
+    "Software": [
+        "Visual Studio Code",
+        "Vim",
+        "Bash",
+        "Git",
+        "GitHub",
+        "Docker",
+        "Robot Operating System 2",
+        "Blender 3D Creation Suite",
+        "OpenGL",
+        ".NET"
+    ],
+    "Computers": [
+        "Building / Upgrading Systems",
+        "Arduino",
+        "Raspberry Pi"
+    ]
+}

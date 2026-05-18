@@ -1,0 +1,50 @@
+[
+    {
+        "projectTitle": "3D Graphics and Rendering Micro-certificate",
+        "projectLocation": "Victoria, BC",
+        "projectStartDate": "Aug 2024",
+        "projectEndDate": "",
+        "projectSummary": "",
+        "projectPointsList": [
+            "Procedural generation of caves, cliffs, and islands",
+            "Implemented boids algorithm for schooling fish",
+            "Written in C# for the Unity Game Engine"
+        ]
+    },
+    {
+        "projectTitle": "UVEEC DIVE Software Team Lead",
+        "projectLocation": "Victoria, BC",
+        "projectStartDate": "Jan 2024",
+        "projectEndDate": "Present",
+        "projectSummary": "",
+        "projectPointsList": [
+            "Onboard new members, assign tasks",
+            "Discuss meeting and work session plans",
+            "Collaborate and integrate with other teams",
+            "Set up skill development sessions for members"
+        ]
+    },
+    {
+        "projectTitle": "CERT (Community Emergency Response Team)",
+        "projectLocation": "Kenmore, Washington",
+        "projectStartDate": "2019",
+        "projectEndDate": "2019",
+        "projectSummary": "",
+        "projectPointsList": [
+            "Applied logistical and organizational skills",
+            "Developed triage and prioritization skills",
+            "Learned basic first aid"
+        ]
+    },
+    {
+        "projectTitle": "High School Wrestling Team Captain",
+        "projectLocation": "Kenmore, Washington",
+        "projectStartDate": "2021",
+        "projectEndDate": "2022",
+        "projectSummary": "",
+        "projectPointsList": [
+            "Developed team building skills",
+            "Learned how to be prepared"
+        ]
+    }
+]
