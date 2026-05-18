@@ -1,104 +1,119 @@
-<!DOCTYPE html>
-
-
-<html lang="en">
-<head>
-    <title>Anthony Cieri</title>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="icon" type="image/png" href="images/LogoV2-512WhiteBG.png">
-</head>
-
-
-
-<header>
-    <div class="construction-notice">
-        <h4>
-            Under Construction
-        </h4>
-    </div>
+    <meta name="description" content="This is a meta description description">
+    <meta property="og:title" content="Project Page — Anthony Cieri">
+    <meta property="og:description" content="This is a meta description description">
+    <meta property="og:image" content="Project Page">
+    <meta property="og:url" content="Project Page">
+    <title>Project Page - Anthony Cieri</title>
     
-    <div class="navigation">
-<a href="./home.html">Home</a>
-<a href="./resume.html">Resume</a>
-</div>
-
-</header>
-
-
-<body>
+        <link rel="stylesheet" href="styles/style-dark-technical.css">
     
-<section class="name">
-    <h1>Anthony Cieri</h1>
-</section>
-
-
+        <link rel="stylesheet" href="styles/home_a.css">
     
-<section class="social-links">
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="https://github.com/Penguinmaster2001" target="_blank">
-                GitHub
-            </a>
+    <link rel="icon" href="./Images/favicon.png">
+</head><header class="site-header">
+  <a href="home.html" class="site-header__logo" aria-label="Anthony Cieri home">AC</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul role="list">
+      
+      <li><a href="home.html" class="site-nav__link">Home</a></li>
+      
+      <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+      
+    </ul>
+  </nav>
+</header><main class="home">
+
+    <section class="hero">
+        <p class="hero__location">Victoria, BC · CS &amp; Math @ UVic</p>
+        <h1 class="hero__name">Anthony Cieri</h1>
+        <div class="hero__bio"><p>I'm a Computer Science and Mathematics student at the University of Victoria, graduating April 2027. I'm drawn to the parts of software where the interesting structure is mathematical: numerical integration, geometry, physics simulation, rendering. I learn best by building things from scratch.</p>
+<p>This summer I'm joining Microsoft Xbox AI as a software engineering intern. Last summer I interned at Nintendo Technology Development, porting a large production .NET 8 C# codebase to Linux. Before that, I was hired by a UVic professor to build an AR app for engineering students. During that internship I competed in Stanford's Immerse the Bay XR Hackathon, where I led a team that built and shipped a mixed reality Meta Quest game in 36 hours, reaching the final judging round.</p>
+<p>Last term I wrote a paper comparing symplectic and non-symplectic numerical integrators on timelike geodesics in Schwarzschild spacetime. The result I found most interesting: the implicit midpoint rule (order 2, symplectic) eventually outperforms RK4 (order 4, non-symplectic) on long integration times because symplectic methods maintain bounded energy error where non-symplectic ones drift. Symplecticity dominates truncation order past a crossover around t ≈ 3.5 × 10⁷.</p>
+<p>Personal projects: an N-body gravity simulator with GPU compute, GLSL shader experiments, a Rust/wgpu renderer, a Hamiltonian system solver, a neural network library, and several game prototypes in Godot, Unity, and Unreal. Primary languages are C# and Python; actively learning Rust.</p></div>
+        <ul class="hero__links" role="list">
+            <li><a href="https://github.com/Penguinmaster2001" class="hero__link" target="_blank"
+                    rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/anthony-cieri" class="hero__link" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:anthony.cieri@hotmail.com" class="hero__link">Email</a></li>
+            <li><a href="./AnthonyCieriResume.pdf" class="hero__link hero__link--cta" target="_blank"
+                    rel="noopener noreferrer">Resume ↗</a></li>
+        </ul>
+    </section>
+
+    <section class="home__featured" aria-labelledby="featured-heading">
+        <div class="home__section-header">
+            <h2 class="section-heading" id="featured-heading">Featured Projects</h2>
+            <a href="projects.html" class="home__see-all">All projects →</a>
         </div>
-        <div class="grid-item">
-            <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
-                LinkedIn
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="mailto:anthony.cieri@hotmail.com">
-                Email
-            </a>
-        </div>
-    </div>
-</section>
-
-
-    <section>
-        <h2>
-            About
-        </h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h3>Bio</h3>
-                <p>
-                    Hello! I'm a Computer Science and Mathematics student at the University of Victoria (UVic), and a Co-Lead of the Software Team at UVic’s Environmental Engineering Club (UVEEC). I'm extremely passionate about programming and math, in particular, exploring and implementing mathematical concepts through programming.
-                </p>
-                <p>
-                    At UVEEC, I'm tasked with designing a control system for an underwater glider. We heavily focus on planning, and documentation to ensure the club's mission will be continued even after I graduate. I also organize skill development sessions for tools widely used in industry such as Git, Linux, ROS 2, and many more.
-                </p>
-                <p>
-                    I also regularly work on personal projects to explore my interests outside of school and the club, like shader programming, game development, and simulations.
-                </p>
-            </div>
-
-            <div class="grid-item">
-                <h3>Please check out my <a href="https://github.com/Penguinmaster2001" target="_blank">GitHub</a> projects to see what I've done!</h3>
-            </div>
-
-            <div class="grid-item">
-                <h3>And take a look at my <a href="resume">Resume Page</a></h3>
-            </div>
+        <div class="project-grid project-grid--featured">
+            
+            <article class="project-card">
+  <div class="project-card__body">
+    <h2 class="project-card__title">Hamiltonian Solver</h2>
+    <p class="project-card__desc">Hamiltonian solver code I wrote for a class project. I wrote a paper comparing symplectic and non-symplectic numerical methods over long term simulations of Schwarzschild trajectories.</p>
+  </div>
+  <div class="project-card__footer">
+    <a href="hamiltonian_solver.html" class="project-card__link">Details →</a>
+    <a href="https://github.com/Penguinmaster2001/HamiltonianSolver.git" class="project-card__link project-card__link--github" target="_blank"
+      rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+</article>
+            
+            <article class="project-card">
+  <div class="project-card__body">
+    <h2 class="project-card__title">Resume and Website Generator</h2>
+    <p class="project-card__desc">A program that can generate a resume tuned to a job application using AI, and can output the resume as a PDF or html webpage.</p>
+  </div>
+  <div class="project-card__footer">
+    <a href="resume_and_website_generator.html" class="project-card__link">Details →</a>
+    <a href="https://github.com/Penguinmaster2001/ResumeGenerator.git" class="project-card__link project-card__link--github" target="_blank"
+      rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+</article>
+            
+            <article class="project-card">
+  <div class="project-card__body">
+    <h2 class="project-card__title">Wgpu renderer</h2>
+    <p class="project-card__desc">A voxel engine and 3D spaceflight simulator. Written in Rust with the WGPU crate.</p>
+  </div>
+  <div class="project-card__footer">
+    <a href="wgpu_renderer.html" class="project-card__link">Details →</a>
+    <a href="https://github.com/Penguinmaster2001/RustVoxelEngine.git" class="project-card__link project-card__link--github" target="_blank"
+      rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+</article>
+            
         </div>
     </section>
-</body>
 
-
-<footer>
-    <div class="footer-links">
-        <a href="https://www.linkedin.com/in/anthony-cieri/" target="_blank">
-            https://www.linkedin.com/in/anthony-cieri/
-        </a>
-        <a href="https://github.com/Penguinmaster2001" target="_blank">
-            https://github.com/Penguinmaster2001
-        </a>
-        <a href="mailto:anthony.cieri@hotmail.com">
-            anthony.cieri@hotmail.com
-        </a>
-    </div>
-</footer>
-
-
-</html>
+</main><footer class="site-footer site-footer--wide">
+  <div class="site-footer__col">
+    <p class="site-footer__name">Anthony Cieri</p>
+    <p class="site-footer__sub">CS & Math @ UVic</p>
+    <p class="site-footer__copy">© 2026</p>
+  </div>
+  <div class="site-footer__col">
+    <p class="site-footer__heading">Pages</p>
+    <ul role="list" class="site-footer__links">
+      
+      <li><a href="home.html" class="site-nav__link">Home</a></li>
+      
+      <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+      
+    </ul>
+  </div>
+  <div class="site-footer__col">
+    <p class="site-footer__heading">Contact</p>
+    <ul role="list" class="site-footer__links">
+      <li><a href="https://github.com/Penguinmaster2001" target="_blank" rel="noopener noreferrer"
+          class="site-footer__link">GitHub ↗</a></li>
+      <li><a href="https://linkedin.com/in/anthony-cieri" target="_blank" rel="noopener noreferrer"
+          class="site-footer__link">LinkedIn ↗</a></li>
+      <li><a href="mailto:anthony@cieri.ca" class="site-footer__link">Email</a></li>
+    </ul>
+  </div>
+</footer></html>

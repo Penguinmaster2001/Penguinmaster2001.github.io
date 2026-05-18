@@ -1,0 +1,111 @@
+/* Home — Skills strip */
+.home__skills {
+    border-top: 1px solid var(--color-divider);
+    border-bottom: 1px solid var(--color-divider);
+    padding-block: var(--space-6);
+    margin-bottom: var(--space-16);
+}
+
+.home__skills-inner {
+    max-width: var(--content-wide);
+    margin-inline: auto;
+    padding-inline: var(--space-6);
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.home__skills-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.home__skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+}
+
+/* Home — Section header row */
+.home__section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: var(--content-wide);
+    margin-inline: auto;
+    padding-inline: var(--space-6);
+    margin-bottom: var(--space-8);
+}
+
+.home__section-header .section-heading {
+    margin-bottom: 0;
+    padding-inline: 0;
+}
+
+.home__see-all {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.home__see-all:hover {
+    color: var(--color-primary);
+}
+
+/* Home — Featured section */
+.home__featured {
+    margin-bottom: var(--space-20);
+}
+
+/* Home — Now / Currently */
+.home__now {
+    max-width: var(--content-default);
+    margin-inline: auto;
+    padding-inline: var(--space-6);
+    padding-bottom: var(--space-20);
+}
+
+.home__now .section-heading {
+    padding-inline: 0;
+    margin-bottom: var(--space-6);
+}
+
+.home__now-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    list-style: none;
+}
+
+.home__now-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.home__now-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: var(--color-border);
+    flex-shrink: 0;
+}
+
+.home__now-dot--active {
+    background: var(--color-primary);
+    box-shadow: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.15);
+}
+
+.home__now-text {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+}
